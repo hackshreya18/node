@@ -9,6 +9,7 @@
 </tr>
 <tr>
 <td>
+<a href="#18.18.0">18.18.0</a><br/>
 <a href="#18.17.1">18.17.1</a><br/>
 <a href="#18.17.0">18.17.0</a><br/>
 <a href="#18.16.1">18.16.1</a><br/>
@@ -58,6 +59,90 @@
   * [0.10.x](CHANGELOG_V010.md)
   * [io.js](CHANGELOG_IOJS.md)
   * [Archive](CHANGELOG_ARCHIVE.md)
+
+<a id="18.18.0"></a>
+
+## 2023-09-14, Version 18.18.0 'Hydrogen' (LTS), @ruyadorno
+
+### Notable Changes
+
+* \[[`10a5bee538`](https://github.com/nodejs/node/commit/10a5bee538)] - **crypto**: update root certificates to NSS 3.90 (Node.js GitHub Bot) [#48416](https://github.com/nodejs/node/pull/48416)
+* \[[`d9ab8557ac`](https://github.com/nodejs/node/commit/d9ab8557ac)] - **doc**: add kvakil to collaborators (Keyhan Vakil) [#48449](https://github.com/nodejs/node/pull/48449)
+* \[[`1f396d283c`](https://github.com/nodejs/node/commit/1f396d283c)] - **(SEMVER-MINOR)** **esm**: add `--import` flag (Moshe Atlow) [#43942](https://github.com/nodejs/node/pull/43942)
+* \[[`863bdb785d`](https://github.com/nodejs/node/commit/863bdb785d)] - **net**: add autoSelectFamily global getter and setter (Paolo Insogna) [#45777](https://github.com/nodejs/node/pull/45777)
+* \[[`c59ae86ba0`](https://github.com/nodejs/node/commit/c59ae86ba0)] - **(SEMVER-MINOR)** **url**: add value argument to has and delete methods (Sankalp Shubham) [#47885](https://github.com/nodejs/node/pull/47885)
+
+### Commits
+
+* \[[`4f74be3c92`](https://github.com/nodejs/node/commit/4f74be3c92)] - **benchmark**: refactor crypto oneshot (Filip Skokan) [#48267](https://github.com/nodejs/node/pull/48267)
+* \[[`fe9da9df0f`](https://github.com/nodejs/node/commit/fe9da9df0f)] - **benchmark**: add crypto.create\*Key (Filip Skokan) [#48284](https://github.com/nodejs/node/pull/48284)
+* \[[`211a4f88a9`](https://github.com/nodejs/node/commit/211a4f88a9)] - **build**: update action to close stale PRs (Michael Dawson) [#48196](https://github.com/nodejs/node/pull/48196)
+* \[[`10a5bee538`](https://github.com/nodejs/node/commit/10a5bee538)] - **crypto**: update root certificates to NSS 3.90 (Node.js GitHub Bot) [#48416](https://github.com/nodejs/node/pull/48416)
+* \[[`aa0846010f`](https://github.com/nodejs/node/commit/aa0846010f)] - **crypto**: remove OPENSSL\_FIPS guard for OpenSSL 3 (Richard Lau) [#48392](https://github.com/nodejs/node/pull/48392)
+* \[[`71db13a1a1`](https://github.com/nodejs/node/commit/71db13a1a1)] - **deps**: update zlib to 1.2.13.1-motley-3ca9f16 (Node.js GitHub Bot) [#48413](https://github.com/nodejs/node/pull/48413)
+* \[[`a2bfe6cd2c`](https://github.com/nodejs/node/commit/a2bfe6cd2c)] - **deps**: upgrade npm to 9.8.1 (npm team) [#48838](https://github.com/nodejs/node/pull/48838)
+* \[[`e8d5d06cde`](https://github.com/nodejs/node/commit/e8d5d06cde)] - **deps**: upgrade npm to 9.8.0 (npm team) [#48665](https://github.com/nodejs/node/pull/48665)
+* \[[`35512cae36`](https://github.com/nodejs/node/commit/35512cae36)] - **deps**: upgrade npm to 9.7.2 (npm team) [#48514](https://github.com/nodejs/node/pull/48514)
+* \[[`e7019dacf8`](https://github.com/nodejs/node/commit/e7019dacf8)] - **deps**: update ada to 2.6.0 (Node.js GitHub Bot) [#48896](https://github.com/nodejs/node/pull/48896)
+* \[[`9da7103f64`](https://github.com/nodejs/node/commit/9da7103f64)] - **deps**: update corepack to 0.19.0 (Node.js GitHub Bot) [#48540](https://github.com/nodejs/node/pull/48540)
+* \[[`6147ff2837`](https://github.com/nodejs/node/commit/6147ff2837)] - **deps**: update corepack to 0.18.1 (Node.js GitHub Bot) [#48483](https://github.com/nodejs/node/pull/48483)
+* \[[`3be53358bc`](https://github.com/nodejs/node/commit/3be53358bc)] - **deps**: add loong64 config into openssl gypi (Shi Pujin) [#48043](https://github.com/nodejs/node/pull/48043)
+* \[[`555982c59e`](https://github.com/nodejs/node/commit/555982c59e)] - **deps**: upgrade npm to 9.7.1 (npm team) [#48378](https://github.com/nodejs/node/pull/48378)
+* \[[`3c03ec0832`](https://github.com/nodejs/node/commit/3c03ec0832)] - **deps**: update simdutf to 3.2.14 (Node.js GitHub Bot) [#48344](https://github.com/nodejs/node/pull/48344)
+* \[[`a2964a4583`](https://github.com/nodejs/node/commit/a2964a4583)] - **deps**: update ada to 2.5.1 (Node.js GitHub Bot) [#48319](https://github.com/nodejs/node/pull/48319)
+* \[[`38f6e0d8cd`](https://github.com/nodejs/node/commit/38f6e0d8cd)] - **deps**: update zlib to 982b036 (Node.js GitHub Bot) [#48327](https://github.com/nodejs/node/pull/48327)
+* \[[`f4617a4f81`](https://github.com/nodejs/node/commit/f4617a4f81)] - **deps**: add loongarch64 into openssl Makefile and gen openssl-loongarch64 (Shi Pujin) [#46401](https://github.com/nodejs/node/pull/46401)
+* \[[`9e94b65ec1`](https://github.com/nodejs/node/commit/9e94b65ec1)] - **doc**: update fs flags documentation (sinkhaha) [#48463](https://github.com/nodejs/node/pull/48463)
+* \[[`ebe5416f3c`](https://github.com/nodejs/node/commit/ebe5416f3c)] - **doc**: revise `error.md` introduction (Antoine du Hamel) [#48423](https://github.com/nodejs/node/pull/48423)
+* \[[`6f5f4aab13`](https://github.com/nodejs/node/commit/6f5f4aab13)] - **doc**: add preveen-stack to triagers (Preveen P) [#48387](https://github.com/nodejs/node/pull/48387)
+* \[[`e86be123db`](https://github.com/nodejs/node/commit/e86be123db)] - **doc**: refine when file is undefined in test events (Moshe Atlow) [#48451](https://github.com/nodejs/node/pull/48451)
+* \[[`d9ab8557ac`](https://github.com/nodejs/node/commit/d9ab8557ac)] - **doc**: add kvakil to collaborators (Keyhan Vakil) [#48449](https://github.com/nodejs/node/pull/48449)
+* \[[`aaaa54df62`](https://github.com/nodejs/node/commit/aaaa54df62)] - **doc**: mark `--import` as experimental (Moshe Atlow) [#44067](https://github.com/nodejs/node/pull/44067)
+* \[[`a8db3319ec`](https://github.com/nodejs/node/commit/a8db3319ec)] - **doc**: add additional info on TSFN dispatch (Michael Dawson) [#48367](https://github.com/nodejs/node/pull/48367)
+* \[[`6f28f4c2d4`](https://github.com/nodejs/node/commit/6f28f4c2d4)] - **doc**: add link for news from security wg (Michael Dawson) [#48396](https://github.com/nodejs/node/pull/48396)
+* \[[`7292bb7319`](https://github.com/nodejs/node/commit/7292bb7319)] - **doc**: fix typo in events.md (Darshan Sen) [#48436](https://github.com/nodejs/node/pull/48436)
+* \[[`06513585dc`](https://github.com/nodejs/node/commit/06513585dc)] - **doc**: run license-builder (github-actions\[bot]) [#48336](https://github.com/nodejs/node/pull/48336)
+* \[[`1f396d283c`](https://github.com/nodejs/node/commit/1f396d283c)] - **(SEMVER-MINOR)** **esm**: add `--import` flag (Moshe Atlow) [#43942](https://github.com/nodejs/node/pull/43942)
+* \[[`a00464ee06`](https://github.com/nodejs/node/commit/a00464ee06)] - **esm**: fix specifier resolution and symlinks (Zack Newsham) [#47674](https://github.com/nodejs/node/pull/47674)
+* \[[`2fd05a045a`](https://github.com/nodejs/node/commit/2fd05a045a)] - **https**: fix connection checking interval not clearing on server close (Nitzan Uziely) [#48383](https://github.com/nodejs/node/pull/48383)
+* \[[`5260f53e55`](https://github.com/nodejs/node/commit/5260f53e55)] - **lib**: add support for inherited custom inspection methods (Antoine du Hamel) [#48306](https://github.com/nodejs/node/pull/48306)
+* \[[`69aaf8b1d1`](https://github.com/nodejs/node/commit/69aaf8b1d1)] - **lib**: remove invalid parameter to toASCII (Yagiz Nizipli) [#48878](https://github.com/nodejs/node/pull/48878)
+* \[[`bf1525c549`](https://github.com/nodejs/node/commit/bf1525c549)] - **module**: reduce url invocations in esm/load.js (Yagiz Nizipli) [#48337](https://github.com/nodejs/node/pull/48337)
+* \[[`b5f53d9a0b`](https://github.com/nodejs/node/commit/b5f53d9a0b)] - **net**: fix family autoselection SSL connection handling (Paolo Insogna) [#48189](https://github.com/nodejs/node/pull/48189)
+* \[[`267439fc34`](https://github.com/nodejs/node/commit/267439fc34)] - **net**: rework autoSelectFamily implementation (Paolo Insogna) [#46587](https://github.com/nodejs/node/pull/46587)
+* \[[`d3637cdbbf`](https://github.com/nodejs/node/commit/d3637cdbbf)] - **net**: fix address iteration with autoSelectFamily (Fedor Indutny) [#48258](https://github.com/nodejs/node/pull/48258)
+* \[[`e8289a83f1`](https://github.com/nodejs/node/commit/e8289a83f1)] - **net**: fix family autoselection timeout handling (Paolo Insogna) [#47860](https://github.com/nodejs/node/pull/47860)
+* \[[`863bdb785d`](https://github.com/nodejs/node/commit/863bdb785d)] - **net**: add autoSelectFamily global getter and setter (Paolo Insogna) [#45777](https://github.com/nodejs/node/pull/45777)
+* \[[`f5892b4a56`](https://github.com/nodejs/node/commit/f5892b4a56)] - **node-api**: provide napi\_define\_properties fast path (Gabriel Schulhof) [#48440](https://github.com/nodejs/node/pull/48440)
+* \[[`f93102cd01`](https://github.com/nodejs/node/commit/f93102cd01)] - **node-api**: implement external strings (Gabriel Schulhof) [#48339](https://github.com/nodejs/node/pull/48339)
+* \[[`121f74c463`](https://github.com/nodejs/node/commit/121f74c463)] - **perf\_hooks**: convert maxSize to IDL value in setResourceTimingBufferSize (Chengzhong Wu) [#44902](https://github.com/nodejs/node/pull/44902)
+* \[[`cb3abcbc81`](https://github.com/nodejs/node/commit/cb3abcbc81)] - **src**: handle wasm out of bound in osx will raise SIGBUS correctly (Congcong Cai) [#46561](https://github.com/nodejs/node/pull/46561)
+* \[[`e4261809b0`](https://github.com/nodejs/node/commit/e4261809b0)] - **src**: replace idna functions with ada::idna (Yagiz Nizipli) [#47735](https://github.com/nodejs/node/pull/47735)
+* \[[`097dea035d`](https://github.com/nodejs/node/commit/097dea035d)] - **stream**: fix deadlock when pipeing to full sink (Robert Nagy) [#48691](https://github.com/nodejs/node/pull/48691)
+* \[[`4892dc5a3e`](https://github.com/nodejs/node/commit/4892dc5a3e)] - **test**: fix flaky test-watch-mode (Moshe Atlow) [#48147](https://github.com/nodejs/node/pull/48147)
+* \[[`27a4bc7c32`](https://github.com/nodejs/node/commit/27a4bc7c32)] - **test**: add missing \<algorithm> include for std::find (Sam James) [#48380](https://github.com/nodejs/node/pull/48380)
+* \[[`cb92c4b9fe`](https://github.com/nodejs/node/commit/cb92c4b9fe)] - **test**: update url web-platform tests (Yagiz Nizipli) [#48319](https://github.com/nodejs/node/pull/48319)
+* \[[`f35c4d3190`](https://github.com/nodejs/node/commit/f35c4d3190)] - **test**: ignore the copied entry\_point.c (Luigi Pinca) [#48297](https://github.com/nodejs/node/pull/48297)
+* \[[`41d1e6888f`](https://github.com/nodejs/node/commit/41d1e6888f)] - **test**: refactor test-gc-http-client-timeout (Luigi Pinca) [#48292](https://github.com/nodejs/node/pull/48292)
+* \[[`125bca621a`](https://github.com/nodejs/node/commit/125bca621a)] - **test**: update encoding web-platform tests (Yagiz Nizipli) [#48320](https://github.com/nodejs/node/pull/48320)
+* \[[`e9ac111d02`](https://github.com/nodejs/node/commit/e9ac111d02)] - **test**: update FileAPI web-platform tests (Yagiz Nizipli) [#48322](https://github.com/nodejs/node/pull/48322)
+* \[[`3da57d17f5`](https://github.com/nodejs/node/commit/3da57d17f5)] - **test**: update user-timing web-platform tests (Yagiz Nizipli) [#48321](https://github.com/nodejs/node/pull/48321)
+* \[[`c728b8a29b`](https://github.com/nodejs/node/commit/c728b8a29b)] - **test**: fix `test-net-autoselectfamily` for kernel without IPv6 support (Livia Medeiros) [#45856](https://github.com/nodejs/node/pull/45856)
+* \[[`6de7aa1d19`](https://github.com/nodejs/node/commit/6de7aa1d19)] - **test**: move `test-tls-autoselectfamily-servername` to `test/internet` (Antoine du Hamel) [#47029](https://github.com/nodejs/node/pull/47029)
+* \[[`2de9868292`](https://github.com/nodejs/node/commit/2de9868292)] - **test**: validate host with commas on url.parse (Yagiz Nizipli) [#48878](https://github.com/nodejs/node/pull/48878)
+* \[[`e7d2e8ef2a`](https://github.com/nodejs/node/commit/e7d2e8ef2a)] - **test**: delete test-net-bytes-per-incoming-chunk-overhead (Michaël Zasso) [#48811](https://github.com/nodejs/node/pull/48811)
+* \[[`7051cafdfa`](https://github.com/nodejs/node/commit/7051cafdfa)] - **test\_runner**: make `--test-name-pattern` recursive (Moshe Atlow) [#48382](https://github.com/nodejs/node/pull/48382)
+* \[[`f302286442`](https://github.com/nodejs/node/commit/f302286442)] - **test\_runner**: refactor coverage report output for readability (Damien Seguin) [#47791](https://github.com/nodejs/node/pull/47791)
+* \[[`3eeca52db1`](https://github.com/nodejs/node/commit/3eeca52db1)] - **tls**: fix bugs of double TLS (rogertyang) [#48969](https://github.com/nodejs/node/pull/48969)
+* \[[`76b1a4ac64`](https://github.com/nodejs/node/commit/76b1a4ac64)] - **tools**: prepare tools/doc for to-vfile 8.0.0 (Rich Trott) [#48485](https://github.com/nodejs/node/pull/48485)
+* \[[`9db17f0b1b`](https://github.com/nodejs/node/commit/9db17f0b1b)] - **tools**: update lint-md-dependencies (Node.js GitHub Bot) [#48417](https://github.com/nodejs/node/pull/48417)
+* \[[`01bc10dcd5`](https://github.com/nodejs/node/commit/01bc10dcd5)] - **tools**: update create-or-update-pull-request-action (Richard Lau) [#48398](https://github.com/nodejs/node/pull/48398)
+* \[[`590a072657`](https://github.com/nodejs/node/commit/590a072657)] - **tools**: update eslint-plugin-jsdoc (Richard Lau) [#48393](https://github.com/nodejs/node/pull/48393)
+* \[[`6a5805491e`](https://github.com/nodejs/node/commit/6a5805491e)] - **tools**: update eslint to 8.42.0 (Node.js GitHub Bot) [#48328](https://github.com/nodejs/node/pull/48328)
+* \[[`2eb13e3986`](https://github.com/nodejs/node/commit/2eb13e3986)] - **tools**: disable jsdoc/no-defaults rule (Luigi Pinca) [#48328](https://github.com/nodejs/node/pull/48328)
+* \[[`c59ae86ba0`](https://github.com/nodejs/node/commit/c59ae86ba0)] - **(SEMVER-MINOR)** **url**: add value argument to has and delete methods (Sankalp Shubham) [#47885](https://github.com/nodejs/node/pull/47885)
+* \[[`f59c9636f4`](https://github.com/nodejs/node/commit/f59c9636f4)] - **url**: conform to origin getter spec changes (Yagiz Nizipli) [#48319](https://github.com/nodejs/node/pull/48319)
+* \[[`0beb5ab93d`](https://github.com/nodejs/node/commit/0beb5ab93d)] - **url**: ensure getter access do not mutate observable symbols (Antoine du Hamel) [#48897](https://github.com/nodejs/node/pull/48897)
 
 <a id="18.17.1"></a>
 

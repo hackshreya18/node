@@ -1,0 +1,10 @@
+git show -s <sha>
+open PR for more info:
+ - is it really meant to land?
+ - are there more commits when it landed?
+ - comment on PR that it needs backport
+ - add label
+git cherry-pick --continue
+once done, verify the list of commits (past upstream/v18.x-staging) to see
+if any of the commits is related to a PR-URL that has the backport-requested label,
+if so, remove it
